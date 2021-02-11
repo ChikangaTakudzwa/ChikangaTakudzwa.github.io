@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<?php include('./temp/head.php') ?>
+
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/doc1.jpg');">
+			<div class="wrap-login100 p-t-30 p-b-50">
+				<span class="login100-form-title p-b-41">
+					<img src="./assets/img/logo_without_phrase.png" />
+				</span>
+				<div class="card">
+					<div class="card-body">
+						<div class="text-center">
+							<h4><?php echo date('F d,Y') ?> <span id="now"></span></h4>
+						</div>
+						<div class="col-md-12">
+							<div class="text-center mb-4" id="log_display"></div>
+								<form action="" id="att-log-frm" >
+									<div class="form-group">
+										<label for="eno" class="control-label">Enter Staff ID</label>
+										<input type="text" id="eno" name="eno" class="form-control col-sm-12">
+									</div>
+									<center>
+										<button style="margin-bottom:10px;" type="button" class='btn btn-sm btn-primary log_now col-sm-4' data-id="1">IN AM</button>
+										<button style="margin-bottom:10px;" type="button" class='btn btn-sm btn-primary log_now col-sm-4' data-id="4">OUT PM</button>	
+									</center>
+									<div class="loading" style="display: none"><center>Please wait...</center></div>
+									<hr/>								
+										<a class="text-center" href="./admin/index.php"><p>admin login</p></a>						
+								</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+
+	<?php include "./temp/scripts.php"; ?>
+</body>
+</html>
